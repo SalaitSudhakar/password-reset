@@ -13,7 +13,7 @@ const ForgotPassword = () => {
     try {
       e.preventDefault();
       const response = await axios.post(
-        "http://localhost:5000/api/auth/forgot-password/",
+        "https://password-reset-eha6.onrender.com/api/auth/forgot-password/",
         { email }
       );
       toast.success(response.data.message);

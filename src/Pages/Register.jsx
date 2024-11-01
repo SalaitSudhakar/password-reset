@@ -20,7 +20,7 @@ const Register = () => {
       e.preventDefault();
       const payload = { name, email, password };
       const response = await axios.post(
-        "http://localhost:5000/api/auth/register",
+        "https://password-reset-eha6.onrender.com/api/auth/register",
         payload
       );
       toast.success(response.data.message);

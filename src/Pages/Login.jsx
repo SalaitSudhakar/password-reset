@@ -18,7 +18,7 @@ const Login = ({ setToken }) => {
       e.preventDefault();
       const payload = { email, password };
       const response = await axios.post(
-        "http://localhost:5000/api/auth/login",
+        "https://password-reset-eha6.onrender.com/api/auth/login",
         payload
       );
       toast.success(response.data.message);
